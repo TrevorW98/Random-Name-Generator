@@ -51,21 +51,22 @@ let getName = document.getElementById("getName").addEventListener("click", funct
 });
 function randomName(){
     let nameSelected = Math.floor(Math.random() * nameBank.length);
-    console.log(nameSelected);
     nameDisplay.innerText = nameBank[nameSelected];
-    console.log(nameBank[nameSelected]);
     namesAlreadyPicked.splice(1, 0, nameBank[nameSelected]);
-    console.log(namesAlreadyPicked);
     nameBank.splice(nameSelected, 1);
-    console.log(nameBank);
     pickedNamesDisplay.innerText = namesAlreadyPicked;
 }
 
 
 
-nameInputField.addEventListener("keypress", function()
+nameInputField.addEventListener("keypress", function(e)
 {
-    
+    console.log(e);
+    if(e.code == "Enter"){
+        addName();
+        console.log(nameBank);
+        e.preventDefault();
+    }
 })
 
 function addName(){
