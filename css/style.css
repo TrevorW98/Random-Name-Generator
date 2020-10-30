@@ -1,0 +1,29 @@
+/*Trevor Womack
+    10/23/2020
+    Mini challenge 9 - RNG name generator
+    On this page you will find a random name generator, pulling from an array of the codestack 2020-21 schoolyear. There are no repeats */
+.backgroundColor {
+  background-color: rgb(48, 68, 226);
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.fontSize1 {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+.jumbotronC {
+  background-color: rgb(129, 136, 194);
+}
+.titleColor {
+  color: white;
+}
+.fontStyle{
+  font-family: 'Anton', sans-serif;
+}
+.navbarColor{
+  background-color: rgb(20, 44, 221);
+}
