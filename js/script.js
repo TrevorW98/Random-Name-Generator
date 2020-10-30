@@ -55,6 +55,7 @@ function randomName(){
     namesAlreadyPicked.splice(1, 0, nameBank[nameSelected]);
     nameBank.splice(nameSelected, 1);
     pickedNamesDisplay.innerText = namesAlreadyPicked;
+    console.log(nameBank);
 }
 
 

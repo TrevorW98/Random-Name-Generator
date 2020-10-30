@@ -19,7 +19,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
   font-weight: bold;
 }
 .jumbotronC {
-  background-color: rgb(129, 136, 194);
+  background-color: rgb(97, 103, 163);
 }
 .titleColor {
   color: white;
@@ -27,4 +27,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 .fontStyle{
   font-family: 'Anton', sans-serif;
 }
+.buttonColor{
 
+  background-color: rgb(61, 2, 102);
+}
