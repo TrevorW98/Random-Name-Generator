@@ -19,27 +19,17 @@
     <title>Codestack Season 3 RNG</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light navbarColor">
-    <button type="button" class="btn btn-primary btn-lg fontStyle">RNG Central</button>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto titleColor">
-        </ul>
-    </div>
-</nav>
 
 <body class="backgroundColor">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-            </div>
-        </div>
+    <div class="center">
+        <nav class="navbar navbar-expand-lg navbar-light center">
+            <div class="alert alert-primary" role="alert">
+               <h1> Welcome to RNG Central </h1>
+              </div>
+        </nav>
     </div>
-    <br>
-    <div class="container">
+
+    <div class="container-fluid">
         <div class="row">
             <div class="col-3 ">
                 <ul class="list-group">
@@ -61,7 +51,7 @@
                     <div class="col-12">
                         <div class="jumbotron jumbotron-fluid jumbotronC">
                             <div class="container">
-                                <h1 class="display-3 text-center titleColor"><b>Random Name Generator 2020</b></h1>
+                                <h2 class="display-3 text-center titleColor"><b>Push the button below to generate a random name from the list!</b></h2>
                                 <br>
                                 <p class="lead center">
                                     <button type="button" id="getName" class="btn btn-primary btn-lg">Get Name</button>
@@ -80,6 +70,18 @@
                                         <div class="card-body">
                                             <p class="card-title center">Names already picked</p>
                                             <p id="alreadyPicked" class="card-text fontSize1"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="center">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <p class="card-title center">Name you want to add</p>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="nameInputField"
+                                                    aria-describedby="emailHelp" placeholder="Enter name">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

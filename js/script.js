@@ -29,11 +29,11 @@ let wickedCss = [
     "rotateIn",
     "bounceIn",
 ];
+let nameInputField = document.getElementById("nameInputField");
 let nameBank = ["Adrian","Ajay", "Alex","Anothay","Bryan","Carlos","Christy","Dylan","Demitrius","Hugo","John","Jorge","Joseph R.","Juan","Ken","Leo","Mendoza","Sean","Shannon","Tyler","Trevor","Victor"]
 let namesAlreadyPicked = [] //This array will hold the names already chosen
 let names = document.getElementsByClassName("list-group-item");
 let nameDisplay = document.getElementById("nameDisplay");
-let nameInputField = document.getElementById("nameInputField");
 
 
 
@@ -61,6 +61,25 @@ function randomName(){
     pickedNamesDisplay.innerText = namesAlreadyPicked;
 }
 
+
+
+nameInputField.addEventListener("keypress", function()
+{
+    
+})
+
 function addName(){
-    let newName = nameInputField.value;
+    if(nameInputField.value == "" || nameInputField.innerText == null)
+    {
+        nameInputField.innerText = "Please enter a name"
+    }
+    else 
+    {
+        nameBank.push(nameInputField.value);
+        nameInputField.value = "";
+    }
 }
+
+
+
+

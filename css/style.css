@@ -3,7 +3,10 @@
     Mini challenge 9 - RNG name generator
     On this page you will find a random name generator, pulling from an array of the codestack 2020-21 schoolyear. There are no repeats */
 .backgroundColor {
-  background-color: rgb(48, 68, 226);
+  background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .center {
   display: flex;
@@ -24,6 +27,4 @@
 .fontStyle{
   font-family: 'Anton', sans-serif;
 }
-.navbarColor{
-  background-color: rgb(20, 44, 221);
-}
+
